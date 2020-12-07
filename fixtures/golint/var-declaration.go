@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"nosuchpkg" // export data unavailable
+//	"nosuchpkg" // export data unavailable
 	"os"
 )
 
@@ -77,7 +77,7 @@ func newWriter() io.Writer { return nil }
 
 // We don't figure out the true types of LHS and RHS here,
 // so we suppress the check.
-var ni nosuchpkg.Interface = nosuchpkg.NewConcrete()
+//var ni nosuchpkg.Interface = nosuchpkg.NewConcrete()
 
 var y string = q(1).String() // MATCH /should omit type string from declaration of var y; it will be inferred from the right-hand side/
 
